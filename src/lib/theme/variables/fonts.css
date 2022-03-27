@@ -1,0 +1,15 @@
+:root {
+  --small-font-size: 12px;
+  --medium-font-size: 14px;
+  --default-font-size: 16px;
+  --heading-five-font-size: 18px;
+  --heading-four-font-size: 20px;
+  --heading-three-font-size: 24px;
+  --heading-two-medium-font-size: 28px;
+  --heading-two-font-size: 30px;
+  --heading-one-font-size: 36px;
+  --font-family: 'Roboto', sans-serif;
+  --regular-weight: 400;
+  --semi-bold: 500;
+  --bold: 700;
+}

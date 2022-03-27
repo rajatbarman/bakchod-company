@@ -1,0 +1,42 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--default-font-size);
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: var(--black);
+  background: var(--white);
+  padding: var(--body-padding);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: var(--default-font-size);
+  touch-action: manipulation;
+}
+
+html, body {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
