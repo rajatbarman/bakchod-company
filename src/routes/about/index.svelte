@@ -1,6 +1,14 @@
+<script context="module">
+  export const prerender = true;
+</script>
 <script>
   import PageLayout from '$lib/components/PageLayout.svelte';
-  export const prerender = true;
+  import { onMount } from 'svelte';
+  import { scrollToTop } from '$lib/utils';
+
+  onMount(() => {
+    scrollToTop();
+  });
 </script>
 
 <PageLayout title="The philosophy">

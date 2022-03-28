@@ -85,7 +85,6 @@
     </div>
   {/if}
   <div class="buttonContainer" on:click={handlePayButtonClick}>
-    <!-- cx(styles.payButton, { [styles.loading]: isCreatingPaymentLink })}> -->
     <button bind:this={buttonRef} class="payButton">
       {#if isCreatingPaymentLink}
         Wait
@@ -197,24 +196,6 @@
     &:hover {
       animation: none;
     }
-
-    /* &:hover {
-      box-shadow:
-        0 0 60px 2px #705CF9,
-        0.5rem 0.5rem 30px mix(black, #705CF9, 50%);
-    } */
-
-    /* &:after {
-      content: '';
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      bottom: 2px;
-      left: 2px;
-      border-radius: 30px;
-      background-image: linear-gradient( 170deg, rgba(white, 0.3), rgba(white, 0) );
-      pointer-events: none;
-    } */
   }
 
   .number {

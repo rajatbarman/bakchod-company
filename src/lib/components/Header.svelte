@@ -17,23 +17,23 @@
 	</div>
 	<div class="bottomNavigation">
 		<a class:linkActive={$page.url.pathname === '/'} class="link" href="/">
-			<img class="icon" src="icons/rupee.png" />
+			<img alt="Pay" class="icon" src="icons/rupee.png" />
 			<span>Pay</span>
 		</a>
 		<a class:linkActive={$page.url.pathname === '/users'} class="link" href="/users">
-			<img class="icon" src="icons/people.png" />
+			<img alt="Users" class="icon" src="icons/people.png" />
 			<span>Bakchods</span>
 		</a>
 		<a class:linkActive={$page.url.pathname === '/about'} class="link" href="/about">
-			<img class="icon" src="icons/about.png" />
+			<img alt="Philosophy" class="icon" src="icons/about.png" />
 			<span>Philosophy</span>
 		</a>
 		<a class:linkActive={$page.url.pathname === '/faq'} class="link" href="/faq">
-			<img class="icon" src="icons/question-mark.png" />
+			<img alt="Q and As" class="icon" src="icons/question-mark.png" />
 			<span>Q and As</span>
 		</a>
 		<a class:linkActive={$page.url.pathname === '/contact'} class="link" href="/contact">
-			<img class="icon" src="icons/email.png" />
+			<img alt="Contact" class="icon" src="icons/email.png" />
 			<span>Contact</span>
 		</a>
 	</div>

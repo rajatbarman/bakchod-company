@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import PageLayout from '$lib/components/PageLayout.svelte';
   export const prerender = true;

@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 const { scss } = preprocess;
 
@@ -11,7 +12,23 @@ const config = {
   ]),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+      fallback: 'index.html'
+    }),
+    vite: {
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks: undefined,
+          },
+        },
+      },
+    }
+    // vite: {
+    //   build: {
+    //     cssCodeSplit: false
+    //   },
+    // }
 	}
 };
 

@@ -1,6 +1,16 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import PageLayout from '$lib/components/PageLayout.svelte';
+  import { onMount } from 'svelte';
+  import { scrollToTop } from '$lib/utils';
   export const prerender = true;
+
+  onMount(() => {
+    scrollToTop();
+  });
 
 	const faq = [
 		{
